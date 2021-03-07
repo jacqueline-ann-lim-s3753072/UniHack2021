@@ -7,8 +7,5 @@
 #### Build With: HTML, CSS, JavaScript
 
 ## Team Members:
-#### Jacqueline Ann Lim
-#### Aldric Choi
-#### Joshua Besei
-#### Pham Nguyen Ngoc Kinh
+#### Jacqueline Ann Lim<br>Aldric Choi<br>Joshua Besei<br>Pham Nguyen Ngoc Kinh
 
