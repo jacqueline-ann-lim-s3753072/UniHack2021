@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FoodHackie</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-bar">
+            <li style="float: left">
+                <a style="padding: 0;" href="index.html"><img style="width: 3em; padding: 0.25em 1em; padding-bottom: 0" src="logo.png" /></a>
+            </li>
+            <li style="float: left; padding: 1em; padding-left: 0; font-weight: 700">
+                FoodHackie
+            </li>
+            <li><a href="listOfOrder.html">List of Order</a></li>
+            <li><a href="foodCheck.html">Food Check</a></li>
+        </ul>
+    </nav>
+
+    <div id="food-check-expiry-heading">
+        <h1 class="heading-food-check-category">Fridge</h1>
+        <div id="temperature">
+            <input type="number" id="temperature-input" value="4" min="0" max="10" oninput="changeTemp()"><span>&#176;</span>C</input>
+        </div>
+    </div>
+
+    <div id="expiration-date-table">
+        <table id="upper-fridge-expiry-table">
+            <tr>
+                <th></th>
+                <th>Upper Fridge</th>
+                <th>Date Manufactured</th>
+                <th>Days left</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dairy Milk</td>
+                <td>2/1/2021</td>
+                <td class="days-left">6</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dairy Milk</td>
+                <td>2/1/2021</td>
+                <td class="days-left">2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Oat Milk</td>
+                <td>2/1/2021</td>
+                <td class="days-left">4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cheese</td>
+                <td>2/1/2021</td>
+                <td class="days-left">3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Apple</td>
+                <td>2/1/2021</td>
+                <td class="days-left">5</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="foodCheckFunction.js"></script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FoodHackie</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-bar">
+            <li style="float: left">
+                <a style="padding: 0" href="index.html"><img style="width: 3em; padding: 0.25em 1em; padding-bottom: 0" src="logo.png" /></a>
+            </li>
+            <li style="float: left; padding: 1em; padding-left: 0; font-weight: 700">
+                FoodHackie
+            </li>
+            <li><a href="listOfOrder.html">List of Order</a></li>
+            <li><a href="foodCheck.html">Food Check</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1 class="heading-food-check-category">Fridge</h1>
+    </div>
+
+    <div class="inner-site-content">
+        <div id="food-check-subcategory" class=".heading-food-check-subcategory">
+            <h5 class="heading-subcategory">
+                <a href="foodCheckExpiry.html">Upper Fridge</a>
+            </h5>
+            <table id="upper-fridge-quantity-table">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Quantity:</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="upper-fridge-list" src="https://www.flaticon.com/svg/vstatic/svg/373/373024.svg?token=exp=1615020682~hmac=eb9bf2f65c642fbb76ba901c92d2738c" />
+                    </td>
+                    <td>Dairy Milk</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="upper-fridge-list" src="https://www.flaticon.com/svg/vstatic/svg/373/373024.svg?token=exp=1615020682~hmac=eb9bf2f65c642fbb76ba901c92d2738c" />
+                    </td>
+                    <td>Oat Milk</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="upper-fridge-list" src="https://www.flaticon.com/svg/vstatic/svg/1071/1071129.svg?token=exp=1615020713~hmac=2d0b13d1de18e6e5aa95eaca06d431a1" />
+                    </td>
+                    <td>Cheese</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="upper-fridge-list" src="https://www.flaticon.com/svg/vstatic/svg/883/883341.svg?token=exp=1615020733~hmac=6eab1769978d8b4b1dcc5362456369af" />
+                    </td>
+                    <td>Apple</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <div id="fridge">
+                <div id="upper-fridge" onclick="checkUpperFridge()">
+                    <p>Upper Fridge</p>
+                </div>
+                <div id="lower-fridge">
+                    <p>Lower Fridge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="foodCheckFunction.js"></script>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FoodHackie</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-bar">
+            <li style="float: left">
+                <a style="padding: 0" href="index.html"><img style="width: 3em; padding: 0.25em 1em; padding-bottom: 0" src="logo.png" /></a>
+            </li>
+            <li style="float: left; padding: 1em; padding-left: 0; font-weight: 700">
+                FoodHackie
+            </li>
+            <li><a href="listOfOrder.html">List of Order</a></li>
+            <li><a href="foodCheck.html">Food Check</a></li>
+        </ul>
+    </nav>
+
+    <div id="grocery-by-date">
+        <h3>Grocery by date:</h3>
+        <button type="button" onclick="listOfOrder()">March 1, 2020</button>
+        <button type="button">March 5, 2020</button>
+    </div>
+
+    <div class="order-transaction-list">
+        <input id="search-input" type="text" placeholder="Search" />
+
+        <table id="listOfOrderTables">
+            <tbody>
+                <tr>
+                    <th colspan="3">March 1, 2020</th>
+                </tr>
+                <tr>
+                    <th>Item</th>
+                    <th>Recommended Location</th>
+                    <th>Choose</th>
+                </tr>
+
+                <tr id="item">
+                    <td>Apples</td>
+                    <td>Table</td>
+                    <td id="image">
+                        <input type="radio" name="row-1" value="table-list" class="hiddenradio" id="table-list-1" />
+                        <label for="table-list-1">
+                <img
+                  id="table-list-1"
+                  class="table-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/3100/3100544.svg?token=exp=1615013717~hmac=fd3a8c5604df6f39b3814f9920238f1c"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-1" value="fridge-list" class="hiddenradio" id="fridge-list-1" />
+                        <label for="fridge-list-1">
+                <img
+                  id="fridge-list-1"
+                  class="fridge-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2333/2333450.svg?token=exp=1615013783~hmac=77d7474bac7129774f065244d11dafb1"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-1" value="cabinet-list" id="cabinet-list-1" />
+                        <label for="cabinet-list-1">
+                <img
+                  id="cabinet-list-1"
+                  class="cabinet-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2562/2562948.svg?token=exp=1615013817~hmac=c3977a7e073adb0d60314acc5ef21679"
+                />
+              </label>
+                    </td>
+                </tr>
+
+                <tr id="item">
+                    <td>Bananas</td>
+                    <td>Table</td>
+                    <td id="image">
+                        <input type="radio" name="row-2" value="table-list" id="table-list-2" />
+                        <label for="table-list-2">
+                <img
+                  id="table-list-2"
+                  class="table-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/3100/3100544.svg?token=exp=1615013717~hmac=fd3a8c5604df6f39b3814f9920238f1c"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-2" value="fridge-lis " class="hiddenradio" id="fridge-list-2" />
+                        <label for="fridge-list-2">
+                <img
+                  id="fridge-list-2"
+                  class="fridge-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2333/2333450.svg?token=exp=1615013783~hmac=77d7474bac7129774f065244d11dafb1"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-2" value="cabinet-list" id="cabinet-list-2" />
+                        <label for="cabinet-list-2">
+                <img
+                  id="cabinet-list-2"
+                  class="cabinet-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2562/2562948.svg?token=exp=1615013817~hmac=c3977a7e073adb0d60314acc5ef21679"
+                />
+              </label>
+                    </td>
+                </tr>
+
+                <tr id="item">
+                    <td>Cheese</td>
+                    <td>Fridge</td>
+                    <td id="image">
+                        <input type="radio" name="row-3" value="table-list" id="table-list-3" />
+                        <label for="table-list-3">
+                <img
+                  id="table-list-3"
+                  class="table-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/3100/3100544.svg?token=exp=1615013717~hmac=fd3a8c5604df6f39b3814f9920238f1c"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-3" value="fridge-list" class="hiddenradio" id="fridge-list-3" />
+                        <label for="fridge-list-3">
+                <img
+                  id="fridge-list-3"
+                  class="fridge-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2333/2333450.svg?token=exp=1615013783~hmac=77d7474bac7129774f065244d11dafb1"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-3" value="cabinet-list" id="cabinet-list-3" />
+                        <label for="cabinet-list-3">
+                <img
+                  id="cabinet-list-3"
+                  class="cabinet-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2562/2562948.svg?token=exp=1615013817~hmac=c3977a7e073adb0d60314acc5ef21679"
+                />
+              </label>
+                    </td>
+                </tr>
+
+                <tr id="item">
+                    <td>Nuts</td>
+                    <td>Pantry</td>
+                    <td id="image">
+                        <input type="radio" name="row-4" value="table-list" id="table-list-4" />
+                        <label for="table-list-4">
+                <img
+                  id="table-list-4"
+                  class="table-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/3100/3100544.svg?token=exp=1615013717~hmac=fd3a8c5604df6f39b3814f9920238f1c"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-4" value="fridge-list" class="hiddenradio" id="fridge-list-4" />
+                        <label for="fridge-list-4">
+                <img
+                  id="fridge-list-4"
+                  class="fridge-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2333/2333450.svg?token=exp=1615013783~hmac=77d7474bac7129774f065244d11dafb1"
+                />
+              </label>
+                    </td>
+                    <td id="image">
+                        <input type="radio" name="row-4" value="cabinet-list" id="cabinet-list-4" />
+                        <label for="cabinet-list-4">
+                <img
+                  id="cabinet-list-4"
+                  class="cabinet-list"
+                  src="https://www.flaticon.com/svg/vstatic/svg/2562/2562948.svg?token=exp=1615013817~hmac=c3977a7e073adb0d60314acc5ef21679"
+                />
+              </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="listOfOrderFunction.js"></script>
+</body>
+
+</html>
